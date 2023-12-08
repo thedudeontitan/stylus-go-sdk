@@ -1,0 +1,2 @@
+tinygo build -o test.wasm -no-debug -panic=trap -scheduler=none -gc=leaking examples/serial && ls -lh test.wasm
+cargo stylus check --wasm-file-path test.wasm 
